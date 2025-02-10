@@ -1,5 +1,5 @@
 import logging
-from backend.config import Config
+from backend.core.config import Config
 from openai import OpenAI
 from pydantic import BaseModel
 

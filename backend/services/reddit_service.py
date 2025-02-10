@@ -6,7 +6,7 @@ import json
 import re
 import redis.asyncio as aioredis
 from backend.models.comment import Comment
-from backend.config import Config
+from backend.core.config import Config
 from backend.models.subreddit import Subreddit
 from backend.models.submission import SubmissionBase
 from backend.models.product_search_request import ProductSearchRequest
@@ -21,9 +21,9 @@ logger = logging.getLogger(__name__)
 openai = OpenAI(api_key=Config.OPENAI_API_KEY)
 
 class RedditService:
-  def __init__(self, redis: aioredis.Redis):
+  def __init__(self, redis_client):
     # initialize redis
-    self.redis = redis
+    self.redis = redis_client
 
     self.client = asyncpraw.Reddit(
       client_id=Config.REDDIT_CLIENT_ID,
