@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/mike/Projects/smart-search/frontend/ui/BootstrapClient.js"],"sourcesContent":["\"use client\";\n\nimport { useEffect } from \"react\";\n\nfunction BootstrapClient() {\n  useEffect(() => {\n    require(\"bootstrap/dist/js/bootstrap.bundle.min.js\");\n  }, []);\n\n  return null;\n}\n\nexport default BootstrapClient;\n"],"names":[],"mappings":";;;AAEA;AAFA;;AAIA,SAAS;IACP,CAAA,GAAA,qMAAA,CAAA,YAAS,AAAD,EAAE;;IAEV,GAAG,EAAE;IAEL,OAAO;AACT;uCAEe"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
